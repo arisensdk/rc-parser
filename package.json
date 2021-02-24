@@ -1,21 +1,21 @@
 {
-  "name": "eos-rc-parser",
-  "version": "1.0.4",
-  "description": "EOS Ricardian contract parser",
+  "name": "@arisensdk/rc-parser",
+  "version": "1.0.0",
+  "description": "ARISEN Ricardian contract parser",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
     "build": "babel ./src/parser.js -o ./lib/index.js --presets es2015"
   },
-  "author": "nsjames",
+  "author": "PeepsLabs <peepslabs@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EOSEssentials/EOS-RC-Parser"
+    "url": "https://github.com/arisensdk/"
   },
   "keywords": [
-    "EOS",
+    "ARISEN",
     "Blockchain",
-    "Ridcardian Contracts"
+    "Ricardian Contracts"
   ],
   "license": "MIT",
   "devDependencies": {
