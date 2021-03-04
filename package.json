@@ -1,5 +1,5 @@
 {
-  "name": "@arisensdk/rc-parser",
+  "name": "@arisensdk/rc-parse",
   "version": "1.0.0",
   "description": "ARISEN Ricardian contract parser",
   "main": "lib/index.js",
