@@ -10,7 +10,7 @@
   "author": "PeepsLabs <peepslabs@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arisensdk/"
+    "url": "https://github.com/arisensdk/rc-parse.git"
   },
   "keywords": [
     "ARISEN",
