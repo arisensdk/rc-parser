@@ -26,17 +26,17 @@ describe('parser', () => {
     });
 
     it('should be able to parse the bidname action', () => {
-        testAction('bidname', {bid: '3 EOS', bidder: 'testaccount', newname: 'somename'}, 'testaccount');
+        testAction('bidname', {bid: '3 RIX', bidder: 'testaccount', newname: 'somename'}, 'testaccount');
     });
 
     it('should be able to parse the bidname action with html enabled', () => {
-        const parsed =testAction('bidname', {bid: '3 EOS', bidder: 'testaccount', newname: 'somename'}, 'testaccount', true);
+        const parsed =testAction('bidname', {bid: '3 RIX', bidder: 'testaccount', newname: 'somename'}, 'testaccount', true);
         assert(parsed.indexOf('<h1>') > -1, 'did not format html');
         assert(parsed.indexOf('<h2>') > -1, 'did not format html');
     });
 
     it('should be able to parse the bidname action with html enabled and custom tags', () => {
-        const parsed = testAction('bidname', {bid: '3 EOS', bidder: 'testaccount', newname: 'somename'}, 'testaccount', {h1:'b', h2:'i class="test"'});
+        const parsed = testAction('bidname', {bid: '3 RIX', bidder: 'testaccount', newname: 'somename'}, 'testaccount', {h1:'b', h2:'i class="test"'});
         assert(parsed.indexOf('<b>') > -1, 'did not format html with custom tags');
         assert(parsed.indexOf('<i class="test">') > -1, 'did not format html with custom tags');
     });
